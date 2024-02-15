@@ -2,7 +2,7 @@ import "./App.css";
 import "./App.css";
 import Snake from "./Snake";
 import display from "./display";
-
+import Point from "./Point";
 import { useEffect } from "react";
 
 export default function App() {
@@ -10,18 +10,17 @@ export default function App() {
   const blueSnake = new Snake("Blue");
   const redSnake = new Snake("Red");
   // Add Snake Tests with display below
-  blueSnake.move(3);
-  redSnake.move(4);
-  redSnake.turn(); //snake turns backwards
-  redSnake.move(3);
-  blueSnake.move(4);
+  blueSnake.move();
+  redSnake.move();
 
   useEffect(() => {
     // Include your display statements to test below
     document.getElementById("output")!.innerText = "OUTPUT:\n";
+    const bluePosition = blueSnake.getPosition();
+    const redPosition = redSnake.getPosition();
 
-    display("The Blue Snake moved to position:", blueSnake.position);
-    display("The Red Snake moved to position:", redSnake.position);
+    display("The Blue Snake moved to position:", bluePosition);
+    display("The Red Snake moved to position:", redPosition);
   }, []);
   return (
     <div className="App">

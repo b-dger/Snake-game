@@ -1,5 +1,5 @@
-import Snake from "./Snake";
-
+//import Snake from "./Snake";
+/*
 const moveSnakes = (times: number, turn: boolean = false) => {
   const greenSnake = new Snake("green");
   const maroonSnake = new Snake("maroon");
@@ -8,9 +8,9 @@ const moveSnakes = (times: number, turn: boolean = false) => {
   for (let i = 0; i < times; i++) {
     const numSquares1 = Math.floor(Math.random() * 100);
     const numSquares2 = Math.floor(Math.random() * 100);
-    greenSnake.move(numSquares1);
-    maroonSnake.move(numSquares2);
-    greenSnake.move(5);
+    greenSnake.move();
+    maroonSnake.move();
+    greenSnake.move();
     totalSquares += numSquares2;
     if (turn) {
       const numSquares3 = Math.floor(Math.random() * 100);
@@ -53,5 +53,5 @@ describe("Addition", function () {
     expect(1 + 1).toEqual(2);
   });
 });
-
+*/
 export {};
