@@ -1,5 +1,4 @@
-// import Snake from "./Snake";
-
+//import Snake from "./Snake";
 /*
 const moveSnakes = (times: number, turn: boolean = false) => {
   const greenSnake = new Snake("green");
@@ -48,12 +47,11 @@ describe("Snake Tests", function () {
     );
   });
 });
-*/
 
 describe("Addition", function () {
   it("sums numbers", () => {
     expect(1 + 1).toEqual(2);
   });
 });
-
+*/
 export {};
